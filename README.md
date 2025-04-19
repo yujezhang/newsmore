@@ -1,14 +1,15 @@
-# NewsNow (Forked & Extended)
+# NewsMore (Forked & Extended)
 
 ![](screenshots/preview.png)
 
 ## What’s New in This Fork
 
 - **✅ Additional Media Sources**
-  - BBC & BBC 中文
-  - The New York Times 中文网
+  - BBC
+  - BBC China
+  - NYT China
   - The Guardian
-  - 人民日报
+  - People's Daily
 
 ## Disclaimer
 
