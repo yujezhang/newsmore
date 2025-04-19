@@ -13,6 +13,41 @@ const Time = {
 }
 
 export const originSources = {
+  "nytimes_zh": {
+    name: "纽约时报中文网",
+    color: "gray",
+    home: "https://cn.nytimes.com",
+    column: "world",
+    type: "hottest",
+  },
+  "bbc_zh": {
+    name: "BBC中文网",
+    color: "red",
+    home: "https://www.bbc.com/zhongwen",
+    column: "world",
+    type: "hottest",
+  },
+  "bbc": {
+    name: "BBC",
+    color: "red",
+    home: "https://www.bbc.com",
+    column: "world",
+    type: "hottest",
+  },
+  "guardian": {
+    name: "The Guardian",
+    color: "teal",
+    home: "https://www.theguardian.com",
+    column: "world",
+    type: "hottest",
+  },
+  "people_daily": {
+    name: "人民日报",
+    color: "red",
+    home: "http://www.people.com.cn",
+    column: "world",
+    type: "hottest",
+  },
   "v2ex": {
     name: "V2EX",
     color: "slate",
@@ -21,6 +56,32 @@ export const originSources = {
       share: {
         title: "最新分享",
         column: "tech",
+      },
+    },
+  },
+  "hackernews": {
+    name: "Hacker News",
+    color: "orange",
+    column: "tech",
+    type: "hottest",
+    home: "https://news.ycombinator.com/",
+  },
+  "producthunt": {
+    name: "Product Hunt",
+    color: "red",
+    column: "tech",
+    type: "hottest",
+    home: "https://www.producthunt.com/",
+  },
+  "github": {
+    name: "Github",
+    color: "gray",
+    home: "https://github.com/",
+    column: "tech",
+    sub: {
+      "trending-today": {
+        title: "Today",
+        type: "hottest",
       },
     },
   },
@@ -48,14 +109,6 @@ export const originSources = {
     color: "red",
     desc: "来自第三方网站: 早晨报",
     home: "https://www.zaobao.com",
-  },
-  "coolapk": {
-    name: "酷安",
-    type: "hottest",
-    column: "tech",
-    color: "green",
-    title: "今日最热",
-    home: "https://coolapk.com",
   },
   "wallstreetcn": {
     name: "华尔街见闻",
@@ -100,32 +153,12 @@ export const originSources = {
     color: "gray",
     home: "https://www.douyin.com",
   },
-  "hupu": {
-    name: "虎扑",
-    disable: true,
-    home: "https://hupu.com",
-  },
-  "tieba": {
-    name: "百度贴吧",
-    title: "热议",
-    column: "china",
-    type: "hottest",
-    color: "blue",
-    home: "https://tieba.baidu.com",
-  },
   "toutiao": {
     name: "今日头条",
     type: "hottest",
     column: "china",
     color: "red",
     home: "https://www.toutiao.com",
-  },
-  "ithome": {
-    name: "IT之家",
-    color: "red",
-    column: "tech",
-    type: "realtime",
-    home: "https://www.ithome.com",
   },
   "thepaper": {
     name: "澎湃新闻",
@@ -135,14 +168,6 @@ export const originSources = {
     title: "热榜",
     color: "gray",
     home: "https://www.thepaper.cn",
-  },
-  "sputniknewscn": {
-    name: "卫星通讯社",
-    color: "orange",
-    // cloudflare pages cannot access
-    disable: "cf",
-    column: "world",
-    home: "https://sputniknews.cn",
   },
   "cankaoxiaoxi": {
     name: "参考消息",
@@ -228,39 +253,6 @@ export const originSources = {
       },
     },
   },
-  "solidot": {
-    name: "Solidot",
-    color: "teal",
-    column: "tech",
-    home: "https://solidot.org",
-    interval: Time.Slow,
-  },
-  "hackernews": {
-    name: "Hacker News",
-    color: "orange",
-    column: "tech",
-    type: "hottest",
-    home: "https://news.ycombinator.com/",
-  },
-  "producthunt": {
-    name: "Product Hunt",
-    color: "red",
-    column: "tech",
-    type: "hottest",
-    home: "https://www.producthunt.com/",
-  },
-  "github": {
-    name: "Github",
-    color: "gray",
-    home: "https://github.com/",
-    column: "tech",
-    sub: {
-      "trending-today": {
-        title: "Today",
-        type: "hottest",
-      },
-    },
-  },
   "bilibili": {
     name: "哔哩哔哩",
     color: "blue",
@@ -286,23 +278,6 @@ export const originSources = {
       },
     },
   },
-  "kuaishou": {
-    name: "快手",
-    type: "hottest",
-    column: "china",
-    color: "orange",
-    // cloudflare pages cannot access
-    disable: "cf",
-    home: "https://www.kuaishou.com",
-  },
-  "kaopu": {
-    name: "靠谱新闻",
-    column: "world",
-    color: "gray",
-    interval: Time.Common,
-    desc: "不一定靠谱，多看多思考",
-    home: "https://kaopu.news/",
-  },
   "jin10": {
     name: "金十数据",
     column: "finance",
@@ -310,66 +285,12 @@ export const originSources = {
     type: "realtime",
     home: "https://www.jin10.com",
   },
-  "baidu": {
-    name: "百度热搜",
-    column: "china",
-    color: "blue",
-    type: "hottest",
-    home: "https://www.baidu.com",
-  },
-  "linuxdo": {
-    name: "LINUX DO",
-    column: "tech",
-    color: "slate",
-    home: "https://linux.do/",
-    disable: "cf",
-    sub: {
-      latest: {
-        title: "最新",
-        home: "https://linux.do/latest",
-      },
-      hot: {
-        title: "今日最热",
-        type: "hottest",
-        interval: Time.Common,
-        home: "https://linux.do/hot",
-      },
-    },
-  },
   "ghxi": {
     name: "果核剥壳",
     column: "china",
     color: "yellow",
     disable: "cf",
     home: "https://www.ghxi.com/",
-  },
-  "smzdm": {
-    name: "什么值得买",
-    column: "china",
-    color: "red",
-    type: "hottest",
-    home: "https://www.smzdm.com",
-  },
-  "nowcoder": {
-    name: "牛客",
-    column: "china",
-    color: "blue",
-    type: "hottest",
-    home: "https://www.nowcoder.com",
-  },
-  "sspai": {
-    name: "少数派",
-    column: "tech",
-    color: "red",
-    type: "hottest",
-    home: "https://sspai.com",
-  },
-  "juejin": {
-    name: "稀土掘金",
-    column: "tech",
-    color: "blue",
-    type: "hottest",
-    home: "https://juejin.cn",
   },
 } as const satisfies Record<string, OriginSource>
 

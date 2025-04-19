@@ -1,4 +1,44 @@
 {
+  "nytimes_zh": {
+    "name": "纽约时报中文网",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://cn.nytimes.com",
+    "color": "gray",
+    "interval": 600000
+  },
+  "bbc_zh": {
+    "name": "BBC中文网",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://www.bbc.com/zhongwen",
+    "color": "red",
+    "interval": 600000
+  },
+  "bbc": {
+    "name": "BBC",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://www.bbc.com",
+    "color": "red",
+    "interval": 600000
+  },
+  "guardian": {
+    "name": "The Guardian",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://www.theguardian.com",
+    "color": "teal",
+    "interval": 600000
+  },
+  "people_daily": {
+    "name": "人民日报",
+    "type": "hottest",
+    "column": "world",
+    "home": "http://www.people.com.cn",
+    "color": "red",
+    "interval": 600000
+  },
   "v2ex": {
     "redirect": "v2ex-share",
     "name": "V2EX",
@@ -15,6 +55,41 @@
     "color": "slate",
     "interval": 600000,
     "title": "最新分享"
+  },
+  "hackernews": {
+    "name": "Hacker News",
+    "type": "hottest",
+    "column": "tech",
+    "home": "https://news.ycombinator.com/",
+    "color": "orange",
+    "interval": 600000
+  },
+  "producthunt": {
+    "name": "Product Hunt",
+    "type": "hottest",
+    "column": "tech",
+    "home": "https://www.producthunt.com/",
+    "color": "red",
+    "interval": 600000
+  },
+  "github": {
+    "redirect": "github-trending-today",
+    "name": "Github",
+    "type": "hottest",
+    "column": "tech",
+    "home": "https://github.com/",
+    "color": "gray",
+    "interval": 600000,
+    "title": "Today"
+  },
+  "github-trending-today": {
+    "name": "Github",
+    "type": "hottest",
+    "column": "tech",
+    "home": "https://github.com/",
+    "color": "gray",
+    "interval": 600000,
+    "title": "Today"
   },
   "zhihu": {
     "name": "知乎",
@@ -41,15 +116,6 @@
     "home": "https://www.zaobao.com",
     "color": "red",
     "interval": 1800000
-  },
-  "coolapk": {
-    "title": "今日最热",
-    "name": "酷安",
-    "type": "hottest",
-    "column": "tech",
-    "home": "https://coolapk.com",
-    "color": "green",
-    "interval": 600000
   },
   "wallstreetcn": {
     "redirect": "wallstreetcn-quick",
@@ -116,28 +182,11 @@
     "color": "gray",
     "interval": 600000
   },
-  "tieba": {
-    "title": "热议",
-    "name": "百度贴吧",
-    "type": "hottest",
-    "column": "china",
-    "home": "https://tieba.baidu.com",
-    "color": "blue",
-    "interval": 600000
-  },
   "toutiao": {
     "name": "今日头条",
     "type": "hottest",
     "column": "china",
     "home": "https://www.toutiao.com",
-    "color": "red",
-    "interval": 600000
-  },
-  "ithome": {
-    "name": "IT之家",
-    "type": "realtime",
-    "column": "tech",
-    "home": "https://www.ithome.com",
     "color": "red",
     "interval": 600000
   },
@@ -149,14 +198,6 @@
     "home": "https://www.thepaper.cn",
     "color": "gray",
     "interval": 1800000
-  },
-  "sputniknewscn": {
-    "name": "卫星通讯社",
-    "disable": "cf",
-    "column": "world",
-    "home": "https://sputniknews.cn",
-    "color": "orange",
-    "interval": 600000
   },
   "cankaoxiaoxi": {
     "name": "参考消息",
@@ -284,48 +325,6 @@
     "interval": 1800000,
     "title": "头条"
   },
-  "solidot": {
-    "name": "Solidot",
-    "column": "tech",
-    "home": "https://solidot.org",
-    "color": "teal",
-    "interval": 3600000
-  },
-  "hackernews": {
-    "name": "Hacker News",
-    "type": "hottest",
-    "column": "tech",
-    "home": "https://news.ycombinator.com/",
-    "color": "orange",
-    "interval": 600000
-  },
-  "producthunt": {
-    "name": "Product Hunt",
-    "type": "hottest",
-    "column": "tech",
-    "home": "https://www.producthunt.com/",
-    "color": "red",
-    "interval": 600000
-  },
-  "github": {
-    "redirect": "github-trending-today",
-    "name": "Github",
-    "type": "hottest",
-    "column": "tech",
-    "home": "https://github.com/",
-    "color": "gray",
-    "interval": 600000,
-    "title": "Today"
-  },
-  "github-trending-today": {
-    "name": "Github",
-    "type": "hottest",
-    "column": "tech",
-    "home": "https://github.com/",
-    "color": "gray",
-    "interval": 600000,
-    "title": "Today"
-  },
   "bilibili": {
     "redirect": "bilibili-hot-search",
     "name": "哔哩哔哩",
@@ -365,23 +364,6 @@
     "interval": 1800000,
     "title": "排行榜"
   },
-  "kuaishou": {
-    "name": "快手",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "china",
-    "home": "https://www.kuaishou.com",
-    "color": "orange",
-    "interval": 600000
-  },
-  "kaopu": {
-    "name": "靠谱新闻",
-    "desc": "不一定靠谱，多看多思考",
-    "column": "world",
-    "home": "https://kaopu.news/",
-    "color": "gray",
-    "interval": 1800000
-  },
   "jin10": {
     "name": "金十数据",
     "type": "realtime",
@@ -390,81 +372,12 @@
     "color": "blue",
     "interval": 600000
   },
-  "baidu": {
-    "name": "百度热搜",
-    "type": "hottest",
-    "column": "china",
-    "home": "https://www.baidu.com",
-    "color": "blue",
-    "interval": 600000
-  },
-  "linuxdo": {
-    "redirect": "linuxdo-latest",
-    "name": "LINUX DO",
-    "disable": "cf",
-    "column": "tech",
-    "home": "https://linux.do/latest",
-    "color": "slate",
-    "interval": 600000,
-    "title": "最新"
-  },
-  "linuxdo-latest": {
-    "name": "LINUX DO",
-    "disable": "cf",
-    "column": "tech",
-    "home": "https://linux.do/latest",
-    "color": "slate",
-    "interval": 600000,
-    "title": "最新"
-  },
-  "linuxdo-hot": {
-    "name": "LINUX DO",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "tech",
-    "home": "https://linux.do/hot",
-    "color": "slate",
-    "interval": 1800000,
-    "title": "今日最热"
-  },
   "ghxi": {
     "name": "果核剥壳",
     "disable": "cf",
     "column": "china",
     "home": "https://www.ghxi.com/",
     "color": "yellow",
-    "interval": 600000
-  },
-  "smzdm": {
-    "name": "什么值得买",
-    "type": "hottest",
-    "column": "china",
-    "home": "https://www.smzdm.com",
-    "color": "red",
-    "interval": 600000
-  },
-  "nowcoder": {
-    "name": "牛客",
-    "type": "hottest",
-    "column": "china",
-    "home": "https://www.nowcoder.com",
-    "color": "blue",
-    "interval": 600000
-  },
-  "sspai": {
-    "name": "少数派",
-    "type": "hottest",
-    "column": "tech",
-    "home": "https://sspai.com",
-    "color": "red",
-    "interval": 600000
-  },
-  "juejin": {
-    "name": "稀土掘金",
-    "type": "hottest",
-    "column": "tech",
-    "home": "https://juejin.cn",
-    "color": "blue",
     "interval": 600000
   }
 }
